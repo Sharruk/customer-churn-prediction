@@ -88,10 +88,11 @@ Final Model: Saved as model.pkl
 📊 Model Evaluation & Comparison
 🔎 Model Performance Overview
 ```bash
-Model Accuracy	ROC AUC
-Logistic Regression	0.737	0.840
-Random Forest	0.776	0.818
-XGBoost	0.786	0.826
+Model                 Accuracy    ROC AUC
+-----------------------------------------
+Logistic Regression    0.737      0.840
+Random Forest          0.776      0.818
+XGBoost                0.786      0.826
 ```
 
 📌 Logistic Regression
