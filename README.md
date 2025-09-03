@@ -55,30 +55,77 @@ streamlit run app.py
 
 Then open http://localhost:8501
  in your browser.
-
 📊 Features
 
-Input customer details via sidebar form
+Interactive form to input customer details (via sidebar)
 
-Predict churn probability (0–100%)
+Predicts churn probability (0–100%)
 
-Display prediction: ✅ Will Stay / ⚠️ Will Churn
+Displays final prediction:
 
-Uses trained ML model (RandomForest / LogisticRegression based)
+✅ Will Stay
+
+⚠️ Will Churn
+
+Powered by ML model trained on telecom dataset
 
 📈 Model Training
 
 Dataset: Telco Customer Churn Dataset (Kaggle)
 
-Preprocessing: Missing value handling, categorical encoding, scaling
+Preprocessing: Missing value handling, categorical encoding, feature scaling
 
-Balancing: SMOTE applied for imbalanced data
+Balancing: SMOTE applied to handle class imbalance
 
-Algorithms tried: Logistic Regression, Random Forest, Gradient Boosting
+Algorithms Tested: Logistic Regression, Random Forest, Gradient Boosting
 
-Final model saved as model.pkl
+Final Model: Saved as model.pkl
 
 
+📊 Model Evaluation & Comparison
+🔎 Model Performance Overview
+Model	Accuracy	ROC AUC
+Logistic Regression	0.737	0.840
+Random Forest	0.776	0.818
+XGBoost	0.786	0.826
+📌 Logistic Regression
+              precision    recall  f1-score   support
+
+           0       0.91      0.71      0.80      1035
+           1       0.50      0.80      0.62       374
+
+    accuracy                           0.74      1409
+   macro avg       0.70      0.76      0.71      1409
+weighted avg       0.80      0.74      0.75      1409
+
+
+ROC AUC: 0.8397
+
+📌 Random Forest
+              precision    recall  f1-score   support
+
+           0       0.85      0.85      0.85      1035
+           1       0.58      0.57      0.57       374
+
+    accuracy                           0.78      1409
+   macro avg       0.71      0.71      0.71      1409
+weighted avg       0.77      0.78      0.78      1409
+
+
+ROC AUC: 0.8179
+
+📌 XGBoost
+              precision    recall  f1-score   support
+
+           0       0.86      0.85      0.85      1035
+           1       0.59      0.61      0.60       374
+
+    accuracy                           0.79      1409
+   macro avg       0.73      0.73      0.73      1409
+weighted avg       0.79      0.79      0.79      1409
+
+
+ROC AUC: 0.8262
 Example Prediction
 
 Input:
