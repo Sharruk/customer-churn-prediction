@@ -1,0 +1,50 @@
+# Python virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Python cache / compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dll
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Environment / config files
+*.env
+*.ini
+*.cfg
+*.toml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VSCode / IDE files
+.vscode/
+.idea/
+
+# Data files (optional - remove if you want to push raw datasets)
+*.csv
+*.tsv
+*.xlsx
+*.xls
+
+# Model files (optional - remove if you want to push trained models)
+*.h5
+*.pkl
+*.joblib
+
+# Python packaging
+*.egg
+*.egg-info/
+dist/
+build/
